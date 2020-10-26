@@ -34,6 +34,8 @@ jobs:
           version: ${{ github.event.client_payload.tag }}
           # The location of the package.json file, defaults to current directory.
           package: ./
+      - name: Echo payload
+        run: echo ${{ github.event.client_payload }}
       - name: Add & Commit
         # You may pin to the exact commit or the version.
         # uses: EndBug/add-and-commit@b5dec7ea7647ed6edf307ec828d3aeb6bca69f63
