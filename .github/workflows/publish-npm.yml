@@ -31,11 +31,11 @@ jobs:
         uses: Reedyuk/NPM-Version@1.0.1
         with:
           # This will be the version you want to set in the package.json file
-          version: ${{ github.event.client_payload.tag }}
+          version: ${{ github.event.client_payload.message.tag }}
           # The location of the package.json file, defaults to current directory.
           package: ./
       - name: Echo payload
-        run: echo ${{ github.event.client_payload.tag }}
+        run: echo ${{ github.event.client_payload.message.tag }}
       - name: Add & Commit
         # You may pin to the exact commit or the version.
         # uses: EndBug/add-and-commit@b5dec7ea7647ed6edf307ec828d3aeb6bca69f63
