@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci   
+      - run: npm ci
       - name: NPM-Version
         # You may pin to the exact commit or the version.
         # uses: Reedyuk/NPM-Version@9b08a57f534ead28c49f7b57665fe9f6d048ff74
@@ -41,8 +41,7 @@ jobs:
         env:
           # This is necessary in order to push a commit to the repo
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
-      - name: Publish NPM
-        run: npm run-script build
-        run: npm publish
-        env:   
+      - run: npm run-script build
+      - run: npm publish
+        env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
