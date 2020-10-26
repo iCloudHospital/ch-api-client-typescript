@@ -6,7 +6,7 @@ name: Version Update
 # events but only for the main branch
 on:
   repository_dispatch:
-    types: 
+    types:
       - create-release-tag
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -47,6 +47,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
         with:
           tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          release_name: Release ${{ github.event.client_payload.tag }}
           draft: false
           prerelease: false
