@@ -1,5 +1,5 @@
 {
-  "name": "ch-api-client-typescript-axios",
+  "name": "ch-api-client-typescript",
   "version": "1.3.3",
   "description": "Openapi generated typescript-axios client for CloudHospital",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cloudhospital/ch-api-client-typescript-axios"
+    "url": "https://github.com/cloudhospital/ch-api-client-typescript"
   },
   "keywords": [
     "CloudHospital",
