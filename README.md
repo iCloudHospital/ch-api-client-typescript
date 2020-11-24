@@ -1,4 +1,4 @@
-# ch-api-client-typescript-axios
+# ch-api-client-typescript
 
 usage:
 
