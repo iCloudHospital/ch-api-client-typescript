@@ -23,7 +23,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "^2.0.3",
+    "@openapitools/openapi-generator-cli": "^2.1.7",
     "@types/node": "^13.9.0"
   }
 }
