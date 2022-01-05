@@ -56,7 +56,7 @@ jobs:
             {
               attachments: [{
                 color: '${{ job.status }}' === 'success' ? 'good' : '${{ job.status }}' === 'failure' ? 'danger' : 'warning',
-                text: `Npm Build ${{ job.status }} in ${process.env.AS_TOOK}`,
+                text: `Ch-api-client ${{ github.event.client_payload.message.tag }} publish ${{ job.status }} in ${process.env.AS_TOOK}`,
               }]
             }
         env:
